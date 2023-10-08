@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<!--types of links in html-->
+
+<!---Anchor Links (Internal Links):
+
+Purpose: Create links within the same web page to navigate to different sections or elements.-->
+
+<a href="#section1">Jump to Section 1</a>
+<!-- ... -->
+<h2 id="section1">Section 1</h2>
+<p>This is the content of Section 1.</p>
+
+
+<!--URL Links (External Links):
+
+Purpose: Create links to external websites or resources.-->
+
+<a href="https://www.example.com">Visit Example.com</a>
+
+
+<!--Email Links:
+
+Purpose: Create links to open the user's default email client with a pre-filled email address.-->
+
+
+<a href="mailto:info@example.com">Email Us</a>
+
+
+<!--File Download Links:
+
+Purpose: Create links to download files such as PDFs, documents, or images.-->
+
+
+<a href="example.pdf" download>Download PDF</a>
+
+
+<!--External Links in New Tab/Window:
+
+Purpose: Open external links in a new browser tab or window.-->
+
+
+<a href="https://www.example.com" target="_blank">Open Example.com in a New Tab</a>
+
+<!--Relative Links:
+
+Purpose: Create links to pages or resources within the same website or directory.-->
+
+
+<a href="products.html">View Our Products</a>
+
+
+<!--Telephone Links:
+
+Purpose: Create links to initiate phone calls when clicked on mobile devices.-->
+
+
+<a href="tel:+1234567890">Call Us</a>
+
+
+<!--Linking to a Specific Protocol:
+
+Purpose: Create links to various protocols like ftp://, file://, or telnet://.-->
+
+
+<a href="ftp://ftp.example.com">Connect to FTP Server</a>
+
+
+<!--Linking to a JavaScript Function:
+
+Purpose: Create links that trigger JavaScript functions.-->
+
+
+<a href="javascript:void(0);" onclick="myFunction()">Click Me</a>
+
+
+
+<!--Linking to CSS Stylesheets:
+
+Purpose: Link to external CSS stylesheets to apply styles to your web page.-->
+
+
+<link rel="stylesheet" href="styles.css" />
+
+
+
+
+
+
+
+
+
+<!---image link-->
+    <center><img src="download.jpg" width="500" height="300"></center>
+
+
+
+    <!---link to redirect to the website-->
+    <center><a href="https://www.isro.gov.in/Chandrayaan3_Details.html">For more details click here</a></center>
+
+
+
+    <!---shown the youtube video in the html page-->
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/3WXZeaqhurk?si=rc5CA-oaxq_RbInP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>video</iframe></center>
+
+
+<!--shown the pdf file in the html browser --->
+<div><center><embed src="download.pdf" width="500" height="200" type="application/pdf"></center></div>
+
+
+<!---these iframe  tag is to run audio in the html browser-->
+    <!---<iframe src="Jai Ho - Slumdog Millionaire 128 Kbps.mp3" ></iframe>--->
+
+<!--object tags like-->
+
+<p>the <iframe>, <embed> and <object> elements. <iframe>s are for embedding other web pages, 
+    and the other two allow you to embed external resources such as PDF files.</p>
+
+
+    <!--Activate your hotspots-->
+<p>In this step, put all your code inside a <map> element. <map> only needs one attribute, 
+    the same map name as you used in your usemap attribute above:</p>
+
+    <map name="example-map-1"> </map>
+
+
+<!--rel-->
+    The preload value of the <link> element's rel attribute allows you to write declarative fetch requests in your HTML 
+
+</head>
+
+<!------------------------list------------------------------------>
+<body>
+     <!-- Ordered List -->
+
+     <!--<ol> means ordered list-->
+        <!--<li> means list items-->
+     <h2>Ordered List</h2>
+     <ol>
+         <li>First Item</li>
+         <li>Second Item</li>
+         <li>Third Item</li>
+     </ol>
+ 
+
+ <!-- Unordered List -->
+ <!--<ul> means unordered list-->
+ <h2>Unordered List</h2>
+ <ul>
+     <li>Item 1</li>
+     <li>Item 2</li>
+     <li>Item 3</li>
+ </ul>
+
+<!--combine of ordered list in unordered list( and wise versa for unordered in ordered list)-->
+
+ <ol>
+    <ul><li>Coffee</li></ul>
+        <li>sugar</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol> 
+
+<!--<dl> Defines a description list-->
+ <!--<dt> Defines a term in a description list-->   
+<!--<dd> Describes the term in a description list-->
+
+    <h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<!--The <dfn> tag stands for the "definition element", and it specifies a term that is going
+     to be defined within the content.
+
+The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.-->
+
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <!---------------------------form--------------------------------------------------------->
+
+
+    <!--type Attribute:
+
+The type attribute specifies the type of input or form control element that you want to create.
+It defines what kind of data the user can input or select in that particular element.
+The value of the type attribute determines the behavior and appearance of the form element.
+Example: <input type="text" /> creates a text input field, while <input type="radio" /> creates a radio button.-->
+
+
+
+<!--id Attribute:
+
+The id attribute provides a unique identifier for an HTML element within the web page.
+It is used to uniquely identify an element so that it can be manipulated using JavaScript or CSS.
+The id attribute is not required, but it's very useful for scripting and styling purposes.
+Example: <input type="text" id="username" /> assigns the unique ID "username" to the text input field.-->
+
+
+<!---name Attribute:
+
+The name attribute specifies the name of the form control element, which is used when submitting the form data to the server.
+When a form is submitted, the data entered in form elements is sent to the server as key-value pairs, where the name attribute is used as the key.
+In cases where multiple elements share the same name (e.g., radio buttons or checkboxes), they are treated as a group, and only the selected values are sent.
+Example: <input type="text" name="username" /> assigns the name "username" to the text input field.-->
+
+
+    <!---Text Input:
+
+Purpose: Allows users to enter single-line text.-->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username" />
+
+
+<!--Textarea:
+
+Purpose: Allows users to enter multiple lines of text.-->
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+
+<!--Password Input:
+
+Purpose: Similar to a text input but hides the entered text as asterisks or dots.-->
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" />
+
+<!--Radio Buttons:
+
+Purpose: Allows users to select one option from a list.-->
+
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="male" />
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" />
+<label for="female">Female</label>
+
+<!--Checkboxes:
+
+Purpose: Allows users to select one or more options from a list.-->
+
+<label>Select your hobbies:</label>
+<input type="checkbox" id="reading" name="hobbies" value="reading" />
+<label for="reading">Reading</label>
+<input type="checkbox" id="gaming" name="hobbies" value="gaming" />
+<label for="gaming">Gaming</label>
+
+
+<!--Select Dropdown:
+
+Purpose: Allows users to select one option from a dropdown list.-->
+
+<label for="country">Country:</label>
+<select id="country" name="country">
+  <option value="usa">United States</option>
+  <option value="canada">Canada</option>
+  <option value="uk">United Kingdom</option>
+</select>
+
+<!--Submit Button:
+
+Purpose: Submits the form data to the server for processing.-->
+
+<input type="submit" value="Submit" />
+
+<!--Reset Button:
+
+Purpose: Clears the form fields.-->
+
+<input type="reset" value="Reset" />
+
+<!--File Input:
+
+Purpose: Allows users to upload files.-->
+
+<label for="file">Choose a file:</label>
+<input type="file" id="file" name="file" />
+
+
+<!---------------------------------------table-------------------------------------------------------->
+
+<!--Basic Table:
+
+Purpose: A simple table with rows and columns.-->
+
+
+<!--<th> table head-->
+
+    <!--<tr> table row-->
+
+        <!--<td> table data-->
+
+<table border="1">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+    <tr>
+      <td>Data 3</td>
+      <td>Data 4</td>
+    </tr>
+  </table>
+
+
+  <!--The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+
+The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, 
+    for each row.
+
+Note: The <colgroup> tag must be a child of a <table> element, after any <caption> elements and 
+    before any <thead>, <tbody>, <tfoot>, and <tr> elements.
+
+Tip: To define different properties to a column within a <colgroup>, use the <col> tag within
+     the <colgroup> tag.-->
+
+
+        <html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>The colgroup element</h1>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<!--The <col> tag specifies column 
+    properties for each column within a <colgroup> element.
+
+The <col> tag is useful for applying styles to entire columns, instead of repeating the styles 
+for each cell, for each row.-->
+
+
+<table>
+    <colgroup>
+      <col span="2" style="background-color:red">
+      <col style="background-color:yellow">
+    </colgroup>
+    <tr>
+      <th>ISBN</th>
+      <th>Title</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>3476896</td>
+      <td>My first HTML</td>
+      <td>$53</td>
+    </tr>
+  </table>
+
+
+  <!--The <thead> tag is used to group header content in an HTML table.
+
+The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table (header, body, footer).
+
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. 
+
+Also, when printing a large table that spans multiple pages, these elements can enable 
+the table header and footer to be printed at the top and bottom of each page.
+
+Note: The <thead> element must have one or more <tr> tags inside.
+
+The <thead> tag must be used in the following context: As a child of a <table> element, 
+    after any <caption> and <colgroup> elements, and before any <tbody>, <tfoot>, and <tr> elements.
+
+Tip: The <thead>, <tbody>, and <tfoot> elements will not affect the layout of the table by default. 
+    However, you can use CSS to style these elements (see example below)!-->
+
+
+    <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!--The <tbody> tag is used to group the body content in an HTML table.
+
+The <tbody> element is used in conjunction with the <thead> and <tfoot> elements to specify each 
+    part of a table (body, header, footer).
+
+Browsers can use these elements to enable scrolling of the table body independently of 
+the header and footer. Also, when printing a large table that spans multiple pages, these elements can 
+enable the table header and footer to be printed at the top and bottom of each page.
+
+Note: The <tbody> element must have one or more <tr> tags inside.
+
+The <tbody> tag must be used in the following context: As a child of a <table> element, 
+    after any <caption>, <colgroup>, and <thead> elements.
+
+Tip: The <thead>, <tbody>, and <tfoot> elements will not affect the layout of the table by default. 
+    However, you can use CSS to style these elements (see example below)!
+
+-->
+<table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!--The <tfoot> tag is used to group footer content in an HTML table.
+
+The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, 
+when printing a large table that spans multiple pages, these elements can enable the table header and footer to be 
+printed at the top and bottom of each page.
+
+Note: The <tfoot> element must have one or more <tr> tags inside.
+
+The <tfoot> tag must be used in the following context: As a child of a <table> element, 
+    after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+
+Tip: The <thead>, <tbody>, and <tfoot> elements will not affect the layout of the table by default. 
+    However, you can use CSS to style these elements (see example below)!-->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+  
+  <!--Table with Column and Row Span:
+
+Purpose: Use colspan and rowspan attributes to merge cells.-->
+
+<!--column span-->
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+<!--row span-->
+<table border="1">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td rowspan="2">Data 2<br>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+    </tr>
+  </table>
+
+
+  <!--The value of the colspan attribute represents the number of columns to span.-->
+  <table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>57</td>
+    </tr>
+  </table>
+
+  <!--The value of the rowspan attribute represents the number of rows to span.-->
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+  </tr>
+  </table>
+
+  <!--Table with Headers and Captions:
+
+Purpose: Add headers and a caption to describe the table.-->
+
+<table border="1">
+    <caption>Employee Information</caption>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Position</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>John</td>
+      <td>Manager</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Alice</td>
+      <td>Developer</td>
+    </tr>
+  </table>
+
+  
+  <!--Nested Tables:
+
+Purpose: Embed tables within other tables for more complex layouts.-->
+
+<table border="1">
+    <tr>
+      <td>
+        <table border="1">
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table border="1">
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  
+  <!--Table with Styling:
+
+Purpose: Apply CSS styles to customize the table's appearance.-->
+
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+    <tr>
+      <td>Data 3</td>
+      <td>Data 4</td>
+    </tr>
+  </table>
+
+  
+  <!--Responsive Table:
+
+Purpose: Make a table responsive to fit various screen sizes.-->
+
+<div style="overflow-x:auto;">
+    <table>
+      <!-- Table content here -->
+    </table>
+  </div>
+
+  
+  <!--We have applied CSS styles to customize the table's appearance, including
+     the table layout, cell padding, background colors for headers and rows, and hover effects for rows.
+The table is centered on the page (margin: 20px auto;) for better presentation.
+You can further customize the table by adjusting the CSS styles to match your specific design requirements. 
+This example serves as a starting point for creating a stylish and customized table on your web page.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product ID</th>
+      <th>Product Name</th>
+      <th>Price (USD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>101</td>
+      <td>Widget A</td>
+      <td>$10.99</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Widget B</td>
+      <td>$12.49</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Widget C</td>
+      <td>$9.99</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>Widget D</td>
+      <td>$15.29</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+</body>
+</html>

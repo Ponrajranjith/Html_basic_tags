@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM_LIST_TABLES</title>
+</head>
+<body>
+        <!-- Form -->
+        <h2>Form</h2>
+        <form action="#" method="post">
+            <!--this field set is used for giving the box of the forms-->
+            <fieldset>
+                <legend>fill forms</legend><br>
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="checkbox" id="it" name="it">
+            <label for="it">IT</label><br>
+
+            <input type="checkbox" id="Business" name="Business">
+            <label for="Business">BUSINESS</label><br>
+
+            <input type="checkbox" id="Government" name="Government">
+            <label for="Government">GOVERNMENT</label><br><BR>
+    
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+    
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <!--this is used for "select" the different "options"-->
+            <label for="one">choose one</label>
+
+            <SELECT id="one" name="one">
+                <OPTION>SELECT ONE</OPTION>
+                <option>WIPRO</option>
+                <option>ACCENTURE</option>
+                <option>INFOSYS</option>
+                <option>TCS</option>
+            </SELECT><br><br>
+            
+            <label for="a">range</label>
+            <input type="range" id="a" name="a" value="50"><br><br>
+           
+            <label for="date">date</label>
+            <input type="date" id="date"><br><br>
+
+            <label for="color">color</label>
+            <input type="color" id="color"><br><br>
+
+            <label for="datetime" >datetime</label>
+            <input type="datetime" id="datetime" ><br><br>
+
+            <label for="image">image</label>
+            <input type="image" id="image"><br><br>
+
+            <label for="month">month</label>
+            <input type="month" id="month" name="month"><br><br>
+
+            <label for="hidden">hidden</label>
+            <input type="hidden" id="hidden" name="hidden"><br><br>
+
+            <label for="search">search</label>
+            <input type="search" id="search" name="search"><br><br>
+            
+            <input type="file" id="file"><br><br>
+            <input type="submit" value="Submit">
+</fieldset>
+</form>
+<hr>
+
+<!--table-->
+<h1>TABLES</h1>
+<table border="2">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>dep</th>
+    </tr>
+    <tr>
+        <td>Ranjith</td>
+        <td>20</td>
+        <td>IT</td>
+    </tr><BR><br>
+</table>
+
+<table border="1">
+<tr>
+    <th rowspan="4">name</th>
+    <th colspan="2">tm name</th>
+
+</tr>
+<td>rohit</td>
+<td>gill</td>
+</tr>
+<tr>
+    <td>kdlkf</td>
+    <td>o;lj</td>
+</tr>
+<tr>
+    <td>klk</td>
+    <td>ll</td>
+</tr>
+
+
+</table>
+<!---colspan-->
+<table border="1">
+    <tr>
+        <th colspan="2" width="50%">name</th>
+        <th width="50%">age</th>
+    </tr>
+    <tr>
+        <td>ranjith</td>
+        <td>mushraf</td>
+        <td>20</td>
+    </tr>
+</table>  
+
+<!---rowspan-->
+<table border="1">
+<tr>
+    <th >Name</th>
+    <td>ranjith</td>
+</tr>
+<tr>
+    <th rowspan="3">telephone</th>
+    <td>7811866400</td></tr>
+    <tr><td>7811866400</td></tr>
+    <tr><td>7811866400</td></tr>
+</table>
+
+<!--unorder list-->
+<h2>unordered list</h2>
+<ul>
+    <li>Name</li>
+    <li>age</li>
+    <li>Gender</li>
+</ul>
+
+<h2>ordered list</h2>
+<ol>
+    <li>Name</li>
+    <li>Age</li>
+    <li>Gender</li>
+</ol>
+<h2>nested in unordered</h2>
+<ul>
+    <li>name</li>
+    <ul>
+        <li>ranjith</li>
+        <li>mushraf</li>
+    </ul>
+    <li>Age</li>
+    <ul>
+        <li>20</li>
+        <li>20</li>
+    </ul>
+</ul>
+
+<!--nested ordered list-->
+<h2>nested ordered list</h2>
+<ol>
+    <li>name</li>
+    <ol>
+        <li>Ranjith</li>
+    </ol>
+    <li>age</li>
+    <ol>
+        <li>20</li>
+    </ol>
+</ol>
+
+<!--nested ordered and unordered-->
+<h2>nested ordered and unordered</h2>
+<ol>
+    <li>CRICKET</li>
+    <ul>
+        <li>players</li>
+        <ol>
+            <li>rohit</li>
+            <li>kohli</li>
+            <li>kl rahul</li>
+        </ol>
+        <li>team</li>
+        <ul><ol>
+            <li>India</li>
+            <li>australia</li>
+        </ol></ul>
+        <li>coach</li>
+        <ol><li>ravi sasthiri</li><ul>
+            <li>dravid</li><ul>
+                <li>dhoni</li>
+            </ul>
+        </ul></ol>
+    </ul>
+</ol>
+
+
+
+</body>
+</html>
